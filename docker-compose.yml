@@ -1,0 +1,8 @@
+version: '3'
+services:
+  cockpit:
+    build: .
+    ports:
+      - 8080:80
+    volumes:
+      - ./storage:/var/www/html/storage
